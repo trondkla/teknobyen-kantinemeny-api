@@ -1,0 +1,27 @@
+{
+  "name": "teknobyen-kantine-facebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository: {
+    "type": "git",
+    "url": "https://github.com/trondkla/teknobyen-kantiner"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kantine",
+    "teknobyen",
+    "meny",
+    "API"
+  ],
+  "author": "Trond Klakken",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1",
+    "fbgraph": "^1.4.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "node-env-file": "^0.1.8"
+  }
+}
