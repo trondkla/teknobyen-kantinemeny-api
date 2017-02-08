@@ -2,8 +2,13 @@ var graph = require('fbgraph');
 var _ = require('lodash');
 var moment = require('moment');
 var env = require('node-env-file');
+var fs = require('fs');
 
-env(__dirname + '/.env');
+
+var envFile = '/.env';
+if (fs.existsSync(envFile)) {
+	env(__dirname + envFile);
+}
 
 graph.setAccessToken(process.env.ACCESS_TOKEN);
 graph.setVersion("2.8");
